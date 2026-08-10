@@ -1,9 +1,19 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"DAIS":
+  url: https://link.springer.com/conference/dais
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ICCV Workshop":
+  url: https://iccv.thecvf.com/
+  color: "#00369f"
 
-"Vision":
+"ICML Workshop":
+  url: https://icml.cc/
+  color: "#9f0036"
+
+"NAACL Workshop":
+  url: https://aclanthology.org/venues/naacl/
   color: "#009f36"
+
+"AAAI Workshop":
+  url: https://aaai.org/conference/aaai/
+  color: "#6f009f"

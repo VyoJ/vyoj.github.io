@@ -8,7 +8,10 @@ group :jekyll_plugins do
     gem 'jekyll-archives-v2'
     gem 'jekyll-cache-bust'
     gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
+    # `jekyll-feed` is intentionally out of the :jekyll_plugins group. Jekyll auto-requires
+    # every gem in this group regardless of the `plugins:` list in _config.yml, so commenting
+    # it out there is not enough to stop /feed.xml being generated. Move it back here (and
+    # uncomment it in _config.yml + `rss_icon` in _data/socials.yml) to restore the RSS feed.
     gem 'jekyll-get-json'
     gem 'jekyll-imagemagick'
     gem 'jekyll-jupyter-notebook'

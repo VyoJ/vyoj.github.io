@@ -28,12 +28,24 @@ Find your change on the left; edit only what is on the right.
 **If your change would create any of these paths in this repo, it belongs in a gem instead:**
 
 ```
-_layouts/   _includes/   _sass/   _scripts/   assets/tailwind/   tailwind.config.js   assets/webfonts/
+_layouts/   _sass/   _scripts/   assets/tailwind/   tailwind.config.js   assets/webfonts/
 ```
 
 `npm run lint:style-contract` fails CI when any of them exists here, and it also rejects `build:css` / `build:tailwind` npm scripts. Do not add a starter-local Tailwind or CSS build pipeline.
 
-This restriction applies to **this repo only**. A user's own site created from this template _may_ legally shadow gem-owned files — see [local overrides: your site vs. this repo](docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo).
+> **This repo is a personal site, not the al-folio starter.** `_includes/` was removed from
+> the stop sign above because a site built from the template _may_ legally shadow gem-owned
+> files — see [local overrides: your site vs. this repo](docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo).
+> Two overrides are in place, both of `al_folio_core` and both minimal:
+>
+> | File                      | Sole difference from the gem                                                                                                    |
+> | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+> | `_includes/header.liquid` | adds `nav_url` / `nav_new_tab` front matter so a navbar entry can link elsewhere and open in a new tab (used by `_pages/cv.md`) |
+> | `_includes/news.liquid`   | date format `'%b %Y'` instead of `'%b %d, %Y'`, so news renders as "May 2026" not "May 25, 2026"                                |
+>
+> Re-audit after dependency bumps with `bundle exec al-folio upgrade overrides audit`, and diff
+> against the gem with `bundle exec al-folio upgrade overrides diff <path>`. Note that news items
+> still need a full `YYYY-MM-DD` in `date:` — Jekyll fails the build on a month-only value.
 
 ## Three failures that produce no error message
 

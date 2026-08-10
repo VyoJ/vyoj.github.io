@@ -65,7 +65,14 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+// `_includes` is deliberately NOT in this list. This repo is a personal site built from
+// the al-folio starter, not the starter itself, and al-folio explicitly supports a site
+// shadowing gem-owned includes (see "local overrides: your site vs. this repo" in
+// docs/ARCHITECTURE.md). We keep one such override, `_includes/header.liquid`, to add
+// new-tab/custom-href support to navbar entries. Track drift with:
+//   bundle exec al-folio upgrade overrides audit
+// The rest of the boundary still holds: no local layouts, Sass, or CSS build pipeline.
+for (const forbiddenPath of ["_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }
@@ -82,7 +89,11 @@ for (const forbiddenGlobPath of [
   }
 }
 
-for (const requiredPath of ["test/visual", "test/integration_plugin_toggles.sh", "test/integration_distill.sh"]) {
+// `test/visual` and `test/integration_distill.sh` were dropped from this list when the
+// al-folio demo posts were deleted. Both asserted against the starter's own sample content
+// (e.g. /blog/2021/distill/), and the visual suite additionally forced `--baseurl /al-folio`
+// and targeted the removed /repositories/ page, so it could not pass on this site anyway.
+for (const requiredPath of ["test/integration_plugin_toggles.sh"]) {
   if (!exists(requiredPath)) {
     failures.push(`Starter integration/visual contract missing required path: \`${requiredPath}\`.`);
   }

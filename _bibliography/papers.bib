@@ -1,115 +1,88 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@inproceedings{samarth2026hypercluster,
+  abbr         = {DAIS},
+  bibtex_show  = {true},
+  title        = {HyperCluster: Decentralized Large Language Model Inference over Peer-to-Peer Wireless Networks},
+  author       = {Samarth, P. and Jain, Vyoman and Raghunandan, Sanjiv and Sri, Akepati Ramya and Sharma, Richa},
+  booktitle    = {IFIP International Conference on Distributed Applications and Interoperable Systems (DAIS)},
+  year         = {2026},
+  publisher    = {Springer},
+  doi          = {10.1007/978-3-032-27358-1_2},
+  html         = {https://link.springer.com/chapter/10.1007/978-3-032-27358-1_2},
+  abstract     = {Large language models' substantial memory and compute requirements hinder deployment on individual resource-constrained devices. HyperCluster is a framework for fully decentralized collaborative inference over wireless networks, contributing a ring-based pipelined inference protocol in which nodes deterministically self-organize into a computational ring by device capability and pass intermediate states directly between peers, and a generalizable model sharding methodology built on HuggingFace Transformers that automatically partitions any dense LLM across heterogeneous devices according to available compute and memory.},
+  selected     = {true},
+  additional_info = {. Also presented as a poster at the ML4Wireless workshop, AAAI 2026 (non-archival)}
 }
 
-@book{einstein1956investigations,
+@inproceedings{samarth2026reviewarena,
+  abbr        = {ICML Workshop},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  title       = {ReviewArena: A Large-Scale Cross-Conference Dataset and Benchmark for LLM Peer Review},
+  author      = {Samarth, P. and Sathvik, Motamarri Sai and Jain, Vyoman and Golugula, Shiva},
+  booktitle   = {ICML 2026 Workshop on AI for Science},
+  year        = {2026},
+  html        = {https://openreview.net/forum?id=yugEO52gkR},
+  abstract    = {ReviewArena is a large-scale peer-review dataset constructed from OpenReview venues (NeurIPS, ICLR, ICML, CoRL, COLM, EMNLP, TMLR) comprising 51,529 papers and 196,099 reviews across fourteen review fields, including full PDFs, reviewer scores and text, rebuttals, meta-reviews, and final decisions. We further derive ReviewArena-Eval, a 1,002-paper benchmark spanning six conferences with aligned, venue-specific evaluation protocols. Baselines with six open-weight LLMs show that current models are miscalibrated, compress rating scales, and weakly distinguish accepted from rejected papers.},
+  selected    = {true},
+  award       = {Spotlight paper},
+  award_name  = {Spotlight}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@article{kolavi2025m3dr,
+  abbr        = {AAAI Workshop},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  title       = {M3DR: Towards Universal Multilingual Multimodal Document Retrieval},
+  author      = {Kolavi, Adithya S. and Jain, Vyoman},
+  journal     = {arXiv preprint arXiv:2512.03514},
+  year        = {2025},
+  arxiv       = {2512.03514},
+  html        = {https://arxiv.org/abs/2512.03514},
+  abstract    = {Existing document retrieval systems are overwhelmingly English-centric. M3DR uses synthetic multilingual document data and generalizes across vision-language architectures to enable semantic search across languages, employing contrastive training to learn unified representations for text and document images. Evaluated on 22 typologically diverse languages across monolingual, multilingual, and mixed-language settings, the resulting NetraEmbed and ColNetraEmbed models achieve state-of-the-art performance with roughly 150% relative improvements on cross-lingual retrieval, supporting both dense-vector and token-level multi-vector retrieval.},
+  selected    = {true},
+  additional_info = {. Accepted at the AAAI 2026 workshop on New Frontiers in Information Retrieval (non-archival)}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@inproceedings{kolavi2025nayana,
+  abbr        = {ICCV Workshop},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {Nayana: A Foundation for Document-Centric Vision-Language Models via Multi-Task, Multimodal, and Multilingual Data Synthesis},
+  author      = {Kolavi, Adithya S. and Jain, Vyoman},
+  booktitle   = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops --- Computer Vision for Developing Countries},
+  year        = {2025},
+  html        = {https://openaccess.thecvf.com/content/ICCV2025W/CV4DC/papers/Kolavi_Nayana_A_Foundation_for_Document-Centric_Vision-Language_Models_via_Multi-Task_Multimodal_ICCVW_2025_paper.pdf},
+  abstract    = {Nayana is a synthetically generated dataset for advancing document-centric vision-language models across tasks and languages. It comprises three interconnected subsets: a base dataset of 3 million document images with hierarchical annotations covering layout, textual content, reading order, and element relationships; a multilingual variant spanning 22 languages that preserves original layout while translating text through contextual models; and an information-retrieval subset of roughly 250,000 image-query pairs per language. Together these enable training for layout detection, equation recognition, captioning, markdown conversion, multilingual OCR, and document retrieval.},
+  selected    = {true},
+  additional_info = {. Also presented as a poster at the CVPR 2025 Workshop on Vision Language Models for All (non-archival)}
 }
 
-@book{przibram1967letters,
+@inproceedings{kolavi2025nayanaocr,
+  abbr        = {NAACL Workshop},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {Nayana OCR: A Scalable Framework for Document OCR in Low-Resource Languages},
+  author      = {Kolavi, Adithya S. and Samarth, P. and Jain, Vyoman},
+  booktitle   = {Proceedings of the 1st Workshop on Language Models for Underserved Communities (LM4UC), NAACL 2025},
+  address     = {Albuquerque, New Mexico},
+  year        = {2025},
+  html        = {https://aclanthology.org/2025.lm4uc-1.11/},
+  pdf         = {https://aclanthology.org/2025.lm4uc-1.11.pdf},
+  abstract    = {Modern vision-language models remain constrained by the scarcity of training data in non-English languages. Nayana is a scalable framework for adapting VLMs to low-resource languages through a layout-aware synthetic data generation pipeline combined with parameter-efficient adaptation, enabling existing models to learn new languages from purely synthetic data. Using LoRA, the framework demonstrates capability across ten Indic languages: Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, and Telugu.},
+  selected    = {true}
+}
+
+@article{samarth2025manimator,
+  abbr        = {ICML Workshop},
+  bibtex_show = {true},
+  title       = {Manimator: Transforming Research Papers into Visual Explanations},
+  author      = {Samarth, P. and Jain, Vyoman and Golugula, Shiva and Sathvik, Motamarri Sai},
+  journal     = {arXiv preprint arXiv:2507.14306},
+  year        = {2025},
+  arxiv       = {2507.14306},
+  html        = {https://arxiv.org/abs/2507.14306},
+  code        = {https://github.com/HyperCluster-Tech/manimator},
+  website     = {https://manimator.hypercluster.tech/},
+  abstract    = {Understanding complex scientific concepts in dense research papers is a significant challenge. Manimator uses large language models to transform research papers and natural language prompts into explanatory animations via the Manim engine: an LLM interprets the input text or PDF to produce a structured scene description outlining key concepts, formulas, and visual elements, and a second code-focused LLM translates that description into executable Manim Python code. The open-source system serves as an educational tool for rapidly creating visual explanations of STEM topics.},
+  selected    = {true},
+  additional_info = {. Presented at the NewInML workshop, ICML 2025 (poster, non-archival)}
 }

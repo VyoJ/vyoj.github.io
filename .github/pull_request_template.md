@@ -40,8 +40,8 @@ If plugin-related, provide:
 - [ ] `bundle exec jekyll build`
 - [ ] `npm run lint:prettier`
 - [ ] `npm run lint:style-contract`
-- [ ] Integration tests (`test/integration_*.sh`) as needed
-- [ ] Visual tests (`npm run test:visual`) as needed
+- [ ] Integration tests (`test/integration_*.sh`) as needed — these need Ruby 3.x, so run them
+      inside Docker (`docker compose exec jekyll sh -c "cd /srv/jekyll && bash test/<name>.sh"`)
 
 ## Notes
 

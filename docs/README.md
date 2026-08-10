@@ -7,6 +7,7 @@ These guides cover the `al-folio` v1.x starter and its pluginized runtime.
 - [Quick Start](QUICKSTART.md): create a site from the template and get it live quickly.
 - [Installing and Deploying](INSTALL.md): Docker, local setup, GitHub Pages, Netlify, and upgrade guidance.
 - [Customizing](CUSTOMIZE.md): content, CVs, publications, layouts, local overrides, and feature configuration.
+- [Writing blog posts](BLOGGING.md): post front matter, per-post feature flags, and every media/diagram/chart syntax, distilled from the deleted al-folio demo posts.
 - [FAQ](FAQ.md): common deployment, upgrade, plugin, and troubleshooting questions.
 - [Troubleshooting](TROUBLESHOOTING.md): build, deployment, styling, and content debugging.
 - [Analytics](ANALYTICS.md): analytics provider setup.

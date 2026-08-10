@@ -2,7 +2,9 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+# TODO: flip back to `nav: true` once there are real blog posts here.
+# The site currently only contains the al-folio demo posts, kept as a feature reference.
+nav: false
 nav_order: 1
 pagination:
   enabled: true
