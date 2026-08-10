@@ -1,0 +1,24 @@
+{%- comment -%}
+  Fixes the stray space before the comma preceding the year, e.g. "(non-archival) , 2025".
+
+  In al_folio_core 1.0.15, `_layouts/bib.liquid` builds `entrytype` and appends
+  `additional_info` through `markdownify`:
+
+    {{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}
+
+  kramdown wraps the value as `<p>…</p>\n`, so stripping the tags leaves the trailing
+  newline behind. A few lines later the layout joins on `", "`, producing "…\n, 2025",
+  and HTML collapses that newline into a rendered space. The layout's closing
+  `{{ periodical | strip }}` cannot help — the newline is interior to the string by then.
+
+  This is the layout's own `_includes/hook/bib.liquid` extension point, which it renders
+  after the `additional_info` capture and before the join. Liquid `include` shares the
+  parent scope, so reassigning `entrytype` here takes effect in the layout. Entries with
+  no `additional_info` never gain the newline, so this is a no-op for them.
+
+  Fixing it here rather than by shadowing `_layouts/bib.liquid` is deliberate: `_layouts/`
+  is on the style-contract stop list (`npm run lint:style-contract` fails if it exists),
+  and this hook is a supported extension point rather than a copied file that must be
+  re-synced on every gem bump. Remove this file if the gem starts stripping the value.
+{%- endcomment -%}
+{%- assign entrytype = entrytype | strip -%}

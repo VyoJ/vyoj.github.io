@@ -1,6 +1,6 @@
 ---
 layout: course
-title: Advanced Foundations of Machine Learning (UE23CS342AA1)
+title: Advanced Foundations of Machine Learning
 description: Teaching Assistant for the 5th-semester AI/ML cohort at PES University, under Dr. Arti Arya.
 instructor: Dr. Arti Arya
 year: 2025
