@@ -9,6 +9,27 @@ tag silently renders nothing — no warning, no error. That is the single most c
 post "looks broken" here.
 
 <!--ts-->
+
+- [Writing blog posts](#writing-blog-posts)
+  - [Before your first post](#before-your-first-post)
+  - [Creating a post](#creating-a-post)
+  - [Core front matter](#core-front-matter)
+  - [Images](#images)
+    - [Comparison slider and galleries](#comparison-slider-and-galleries)
+  - [Video and audio](#video-and-audio)
+  - [Code](#code)
+  - [Math](#math)
+  - [Diagrams](#diagrams)
+  - [Charts](#charts)
+  - [Tables](#tables)
+  - [Table of contents](#table-of-contents)
+  - [Custom blockquotes](#custom-blockquotes)
+  - [Citations and bibliography](#citations-and-bibliography)
+  - [Comments](#comments)
+  - [Notebooks and interactive Python](#notebooks-and-interactive-python)
+  - [The distill layout](#the-distill-layout)
+  - [Gotchas](#gotchas)
+
 <!--te-->
 
 ## Before your first post
