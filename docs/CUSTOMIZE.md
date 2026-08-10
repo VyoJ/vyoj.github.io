@@ -258,7 +258,7 @@ Use Code Wiki and DeepWiki **only after**:
 
 - You have reviewed the relevant sections in this `CUSTOMIZE.md` file
 - You have checked the [project structure](#project-structure) section above
-- You have explored the [documentation index](README.md) and the main guides linked from the root [README](../README.md)
+- You have explored the [documentation index](README.md) and the main guides linked from the al-folio [README](../README-al-folio.md)
 - You have checked the [GitHub Discussions Q&A section](https://github.com/alshedivat/al-folio/discussions/categories/q-a)
 
 These tools are best used for:

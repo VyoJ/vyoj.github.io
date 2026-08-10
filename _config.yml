@@ -251,6 +251,7 @@ exclude:
   - package-lock.json
   - purgecss.config.js
   - README.md
+  - README-al-folio.md
   - readme_preview/
   - gems/
   - migrations/
