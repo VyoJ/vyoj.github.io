@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-09-02'
+  last_updated: '2026-09-07'
 papers:
   GG1XMRUAAAAJ:2osOgNQ5qMEC:
     citations: 3
@@ -22,6 +22,6 @@ papers:
     title: 'Nayana: A Foundation for Document-Centric Vision-Language Models via Multi-Task, Multimodal, and Multilingual Data Synthesis'
     year: '2025'
   GG1XMRUAAAAJ:u5HHmVD_uO8C:
-    citations: 11
+    citations: 12
     title: 'Nayana OCR: A Scalable Framework for Document OCR in Low-Resource Languages'
     year: '2025'
