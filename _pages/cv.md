@@ -19,4 +19,4 @@ description: My full CV, kept as a single PDF.
   </a>
 </p>
 
-<p>Last updated August 2026. It covers my research, work experience, publications, teaching, and awards.</p>
+<p>Last updated September 2026.</p>

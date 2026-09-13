@@ -5,7 +5,7 @@ permalink: /projects/
 description: research systems and things I have built.
 nav: true
 nav_order: 3
-display_categories: [research, work]
+display_categories: [research, work, hackathons]
 horizontal: false
 ---
 
