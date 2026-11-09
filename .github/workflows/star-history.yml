@@ -10,9 +10,6 @@ on:
     # made with GITHUB_TOKEN, so this is the second of two guards.)
     paths-ignore:
       - "assets/img/star-history-*.svg"
-  # Stars keep accruing even when nobody pushes, so refresh weekly regardless.
-  schedule:
-    - cron: "17 4 * * 1"
   workflow_dispatch:
 
 permissions:
